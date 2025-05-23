@@ -1,0 +1,193 @@
+---
+mode: "custom"
+---
+
+export function openSearch() {
+  document.getElementById('search-bar-entry').click();
+}
+
+<div className="relative w-full flex items-center justify-center" style={{ height: '26rem', overflow: 'hidden'}}>
+<div className="absolute inset-0 bg-primary dark:bg-primary-light" style={{opacity: 0.05 }}></div>
+  <div style={{ position: 'absolute', textAlign: 'center', padding: '0 1rem' }}>
+    <div
+      className="text-gray-900 dark:text-white"
+      style={{
+       fontWeight: '800',
+       fontSize: '2.5rem',
+       margin: '0',
+       marginTop: '5rem'
+      }}
+    >
+      Welcome to Zeotap Docs!
+    </div>
+    <p className="mt-4 text-gray-900 dark:text-white" style={{ fontSize: '1rem', fontWeight: '600' , maxWidth: '40rem'}}>Learn how to use Zeotap CDP to collect, unify and activate your customer data across multiple platforms. </p>
+    <div className="flex items-center justify-center" style={{ maxWidth: '800px', margin: '0 auto' }}>
+    <button
+      type="button"
+      className="hidden w-full lg:flex items-center text-sm leading-6 py-4 pl-4 pr-4 text-gray-500 rounded-full"
+      id="home-search-entry"
+      style={{
+        marginTop: '2rem',
+        maxWidth: '40rem',
+        background: '#FFF',
+        boxShadow: '0px 1px 4px 0px rgba(8, 9, 10, 0.25), 0px 0px 0px 4px rgba(255, 255, 255, 0.20)',
+        cursor: 'pointer',
+        textAlign: 'left',
+      }}
+      onClick={openSearch}
+    >
+      <svg
+        className="h-4 w-4 ml-1.5 flex-none bg-primary hover:bg-gray-600 dark:bg-primary-dark dark:hover:bg-white/70"
+        style={{
+        marginRight: '0.5rem',
+         maskImage:
+           'url("https://mintlify.b-cdn.net/v6.5.1/solid/magnifying-glass.svg")',
+         maskRepeat: 'no-repeat',
+         maskPosition: 'center center',
+        }}
+      />
+      Search or ask...
+    </button>
+    </div>
+    <div style={{ maxWidth: '650px', margin: '0 auto', marginTop: '2rem' }}>
+      <div className="flex flex-wrap items-center justify-center gap-3 mt-3">
+        <IntroCard icon="play" title="Get Started" href="/docs/sdk" />
+        <IntroCard icon="code" title="API Reference" href="/reference/manage-library-ref" />
+        <IntroCard icon="bell" title="Updates" href="/changelog" />
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  style={{marginTop: '2rem', marginBottom: '8rem', maxWidth: '70rem', marginLeft: 'auto',
+  marginRight: 'auto', paddingLeft: '1.25rem',
+  paddingRight: '1.25rem' }}
+>
+
+
+<CardGroup cols={1}>
+<Card
+  title="Get Started with Zeotap CDP"
+  href="/articles/get-started-guide/getting-started"
+  icon="stars"
+  iconType="solid"
+>
+  Learn how to use the different modules within Zeotap CDP and get started.
+</Card>
+</CardGroup>
+
+<div className="flex flex-col w-full " style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+  <h2
+    className="text-gray-900 dark:text-gray-200"
+    style={{
+      fontSize: '2rem',
+      fontWeight: '700',
+    }}
+  >
+  Browse by product
+  </h2>
+
+</div>
+
+<CardGroup cols={3}>
+<Card
+  title="Integrate"
+  href="https://login.zeotap.com"
+  icon="plug"
+  iconType="solid"
+>
+  Discover how to use **Sources** and **Destinations** to integrate your disparate data sources and activate your data across platforms.
+</Card>
+
+<Card
+  title="Unify"
+  href="https://login.zeotap.com"
+  icon="object-ungroup"
+  iconType="solid"
+>
+  Discover how to use **Catalogue**, **Calculated Attributes** and **ID Strategy** to unify your customer data.
+</Card>
+
+<Card
+  title="Segment"
+  href="https://login.zeotap.com"
+  icon="users"
+  iconType="solid"
+>
+  Discover how to use **Audiences** to create cohorts and activate your customer data.
+</Card>
+
+<Card
+  title="Orchestrate"
+  href="https://login.zeotap.com"
+  icon="diagram-project"
+  iconType="solid"
+>
+  Discover how to use **Journeys** to orchestrate personalised workflows with actionable recommendations.
+</Card>
+
+<Card
+  title="Dashboard"
+  href="https://login.zeotap.com"
+  icon="chart-line"
+  iconType="solid"
+>
+  Discover how to use **Dashboard** to analyse your platform usage, exploring consumption metrics and more.
+</Card>
+
+<Card
+  title="Protect"
+  href="https://login.zeotap.com"
+  icon="shield"
+  iconType="solid"
+>
+  Discover how to use **Consent, Customer 360** and **Data Lifecycle** to protect your customer data by being compliant with regulatory frameworks.
+</Card>
+
+</CardGroup>
+
+
+<div className="flex flex-col w-full " style={{ marginTop: '2rem', marginBottom: '2rem' }}>
+  <h2
+    className="text-gray-900 dark:text-gray-200"
+    style={{
+      fontSize: '2rem',
+      fontWeight: '700',
+    }}
+  >
+  Do more with Zeotap
+  </h2>
+
+</div>
+
+
+<CardGroup cols={3}>
+  <Card
+    title="Target"
+    href="https://login.zeotap.com"
+    icon="bullseye"
+    iconType="solid"
+  >
+    Discover how to use **Target** to create and activate deterministic third-party Audience.
+  </Card>
+
+  <Card
+    title="ID+"
+    href="https://login.zeotap.com"
+    icon="fingerprint"
+    iconType="solid"
+  >
+    Discover how to use **ID+** to create custom journeys and provide optimal actions.
+  </Card>
+
+  <Card
+    title="Admin"
+    href="https://login.zeotap.com"
+    icon="user-gear"
+    iconType="solid"
+  >
+    Discover how to use **Admin** to create organisations and add users with specific roles and access.
+  </Card>
+</CardGroup>
+
+</div>
